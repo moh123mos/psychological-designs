@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المراجعون · العيادة</title>
+<link rel="stylesheet" href="style.css">
+<script src="../shared/icons.js"></script>
+<script src="../shared/present.js"></script>
+</head>
+<body class="staff">
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark"><svg class="i"><use href="#i-leaf"/></svg></span>
+      <div><b>عيادة د. هالة الشامي</b><small>للإرشاد والعلاج النفسي</small></div>
+    </div>
+    <div class="nav-label">العيادة</div>
+    <nav class="nav">
+      <a href="01-dashboard.html"><svg class="i"><use href="#i-dashboard"/></svg>الرئيسية</a>
+      <a href="02-calendar.html"><svg class="i"><use href="#i-calendar"/></svg>المواعيد<span class="badge">3</span></a>
+      <a href="03-clients.html" class="active"><svg class="i"><use href="#i-users"/></svg>المراجعون</a>
+    </nav>
+    <div class="nav-label">المتابعة</div>
+    <nav class="nav">
+      <a href="05-session-note.html"><svg class="i"><use href="#i-note"/></svg>الجلسات</a>
+      <a href="04-client-file.html" class="secondary"><svg class="i"><use href="#i-target"/></svg>الخطط والأهداف</a>
+      <a href="06-assessments.html"><svg class="i"><use href="#i-chart"/></svg>التقييمات</a>
+    </nav>
+    <div class="nav-label">النظام</div>
+    <nav class="nav">
+      <a href="#" class="secondary"><svg class="i"><use href="#i-megaphone"/></svg>الإشعارات والإعلانات</a>
+      <a href="#" class="secondary"><svg class="i"><use href="#i-settings"/></svg>الإعدادات</a>
+    </nav>
+    <div class="sidebar-foot">
+      <span class="avatar">هـ</span>
+      <div><b>د. هالة الشامي</b><small>أخصائية نفسية</small></div>
+      <button class="icon-btn" title="تسجيل الخروج"><svg class="i"><use href="#i-logout"/></svg></button>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="search input-icon">
+        <svg class="i"><use href="#i-search"/></svg>
+        <input class="input" type="search" placeholder="ابحث باسم المراجع أو رقم الملف…">
+      </div>
+      <div class="today"><svg class="i sm"><use href="#i-calendar"/></svg><span>اليوم</span> <b class="num">الأحد 11 أكتوبر 2026</b></div>
+      <button class="icon-btn" title="الإشعارات"><svg class="i"><use href="#i-bell"/></svg><span class="dot"></span></button>
+      <span class="avatar">هـ</span>
+    </header>
+
+    <main class="content">
+      <div class="page-head">
+        <div>
+          <h1>المراجعون</h1>
+          <p class="sub num">66 ملفًا · 42 نشط · 6 متوقف مؤقتًا · 18 مغلق</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-ghost" href="#"><svg class="i"><use href="#i-user-plus"/></svg>طلبات الحسابات <span class="chip st-new plain num">1</span></a>
+          <a class="btn btn-primary" href="#"><svg class="i"><use href="#i-plus"/></svg>ملف جديد</a>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <div class="input-icon">
+          <svg class="i"><use href="#i-search"/></svg>
+          <input class="input" type="search" placeholder="الاسم أو رقم الملف">
+        </div>
+        <div class="seg">
+          <button class="on">الكل <span class="n num">66</span></button>
+          <button>نشط <span class="n num">42</span></button>
+          <button>متوقف مؤقتًا <span class="n num">6</span></button>
+          <button>مغلق <span class="n num">18</span></button>
+        </div>
+        <select class="select" aria-label="الفئة">
+          <option>كل الفئات</option><option>أطفال</option><option>مراهقون</option><option>بالغون</option><option>حالات نمائية</option>
+        </select>
+        <select class="select" aria-label="الترتيب">
+          <option>الأحدث نشاطًا</option><option>الاسم</option><option>رقم الملف</option><option>الموعد القادم</option>
+        </select>
+      </div>
+
+      <section class="card table-card">
+        <table class="table">
+          <thead>
+            <tr><th>المراجع</th><th>الفئة</th><th>بداية المتابعة</th><th>آخر جلسة</th><th>الموعد القادم</th><th>الحالة</th><th></th></tr>
+          </thead>
+          <tbody class="num">
+            <tr onclick="location.href='04-client-file.html'">
+              <td><div class="person"><span class="avatar av-4">ي</span><div><b>يوسف العتيبي</b><span>#1045 · ولي الأمر: أمل العتيبي</span></div></div></td>
+              <td data-l="الفئة"><span class="tag">حالة نمائية · 6 سنوات</span></td>
+              <td data-l="البداية" class="hide-m">19 يناير 2025</td>
+              <td data-l="آخر جلسة" class="hide-m">4 أكتوبر</td>
+              <td data-l="القادم" class="soon">اليوم · 14:00</td>
+              <td><span class="chip st-active">نشط</span></td>
+              <td class="hide-m"><button class="icon-btn sm" title="المزيد"><svg class="i"><use href="#i-more"/></svg></button></td>
+            </tr>
+            <tr onclick="location.href='04-client-file.html'">
+              <td><div class="person"><span class="avatar av-2">ل</span><div><b>ليان أحمد</b><span>#1024 · ولي الأمر: سارة الأحمد</span></div></div></td>
+              <td data-l="الفئة"><span class="tag">طفلة · 8 سنوات</span></td>
+              <td data-l="البداية" class="hide-m">9 مارس 2025</td>
+              <td data-l="آخر جلسة" class="hide-m">اليوم</td>
+              <td data-l="القادم">الأحد 18 أكتوبر · 09:00</td>
+              <td><span class="chip st-active">نشط</span></td>
+              <td class="hide-m"><button class="icon-btn sm" title="المزيد"><svg class="i"><use href="#i-more"/></svg></button></td>
+            </tr>
+            <tr onclick="location.href='04-client-file.html'">
+              <td><div class="person"><span class="avatar">ع</span><div><b>عمر خالد</b><span>#1031</span></div></div></td>
+              <td data-l="الفئة"><span class="tag">مراهق · 15 سنة</span></td>
+              <td data-l="البداية" class="hide-m">22 يونيو 2025</td>
+              <td data-l="آخر جلسة" class="hide-m">4 أكتوبر</td>
+              <td data-l="القادم" class="soon">اليوم · 10:00</td>
+              <td><span class="chip st-active">نشط</span></td>
+              <td class="hide-m"><button class="icon-btn sm" title="المزيد"><svg class="i"><use href="#i-more"/></svg></button></td>
+            </tr>
+            <tr onclick="location.href='06-assessments.html'">
+              <td><div class="person"><span class="avatar av-3">ن</span><div><b>نورة سالم</b><span>#0987</span></div></div></td>
+              <td data-l="الفئة"><span class="tag">بالغة · 32 سنة</span></td>
+              <td data-l="البداية" class="hide-m">15 سبتمبر 2024</td>
+              <td data-l="آخر جلسة" class="hide-m">4 أكتوبر</td>
+              <td data-l="القادم" class="soon">اليوم · 11:30</td>
+              <td><span class="chip st-active">نشط</span></td>
+              <td class="hide-m"><button class="icon-btn sm" title="المزيد"><svg class="i"><use href="#i-more"/></svg></button></td>
+            </tr>
+            <tr onclick="location.href='04-client-file.html'">
+              <td><div class="person"><span class="avatar av-2">د</span><div><b>دانة فهد</b><span>#1038</span></div></div></td>
+              <td data-l="الفئة"><span class="tag">بالغة · 29 سنة</span></td>
+              <td data-l="البداية" class="hide-m">2 نوفمبر 2025</td>
+              <td data-l="آخر جلسة" class="hide-m">5 أكتوبر</td>
+              <td data-l="القادم">الإثنين 12 أكتوبر · 10:00</td>
+              <td><span class="chip st-active">نشط</span></td>
+              <td class="hide-m"><button class="icon-btn sm" title="المزيد"><svg class="i"><use href="#i-more"/></svg></button></td>
+            </tr>
+            <tr onclick="location.href='04-client-file.html'">
+              <td><div class="person"><span class="avatar av-3">س</span><div><b>سلمان ناصر <span class="tag" style="margin-inline-start:4px">جديد</span></b><span>#1060</span></div></div></td>
+              <td data-l="الفئة"><span class="tag">بالغ · 35 سنة</span></td>
+              <td data-l="البداية" class="hide-m">28 سبتمبر 2026</td>
+              <td data-l="آخر جلسة" class="hide-m muted">—</td>
+              <td data-l="القادم"><span class="chip st-new">طلب · الثلاثاء 13</span></td>
+              <td><span class="chip st-active">نشط</span></td>
+              <td class="hide-m"><button class="icon-btn sm" title="المزيد"><svg class="i"><use href="#i-more"/></svg></button></td>
+            </tr>
+            <tr onclick="location.href='04-client-file.html'">
+              <td><div class="person"><span class="avatar">ع</span><div><b>عبدالرحمن سعيد</b><span>#1019 · ولي الأمر: سعيد الغامدي</span></div></div></td>
+              <td data-l="الفئة"><span class="tag">مراهق · 16 سنة</span></td>
+              <td data-l="البداية" class="hide-m">11 فبراير 2025</td>
+              <td data-l="آخر جلسة" class="hide-m">28 سبتمبر</td>
+              <td data-l="القادم">الإثنين 12 أكتوبر · 14:30</td>
+              <td><span class="chip st-active">نشط</span></td>
+              <td class="hide-m"><button class="icon-btn sm" title="المزيد"><svg class="i"><use href="#i-more"/></svg></button></td>
+            </tr>
+            <tr onclick="location.href='04-client-file.html'">
+              <td><div class="person"><span class="avatar av-4">م</span><div><b>مها عبدالله</b><span>#0912</span></div></div></td>
+              <td data-l="الفئة"><span class="tag">بالغة · 41 سنة</span></td>
+              <td data-l="البداية" class="hide-m">7 أبريل 2024</td>
+              <td data-l="آخر جلسة" class="hide-m">10 أغسطس</td>
+              <td data-l="القادم"><span class="chip st-pending">طلب تغيير</span></td>
+              <td><span class="chip st-paused">متوقف مؤقتًا</span></td>
+              <td class="hide-m"><button class="icon-btn sm" title="المزيد"><svg class="i"><use href="#i-more"/></svg></button></td>
+            </tr>
+            <tr onclick="location.href='04-client-file.html'">
+              <td><div class="person"><span class="avatar av-5">ر</span><div><b>رنا محمود</b><span>#0876</span></div></div></td>
+              <td data-l="الفئة"><span class="tag">مراهقة · 17 سنة</span></td>
+              <td data-l="البداية" class="hide-m">1 أكتوبر 2023</td>
+              <td data-l="آخر جلسة" class="hide-m">2 يونيو</td>
+              <td data-l="القادم" class="muted">—</td>
+              <td><span class="chip st-closed">مغلق</span></td>
+              <td class="hide-m"><button class="icon-btn sm" title="المزيد"><svg class="i"><use href="#i-more"/></svg></button></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-foot num">
+          <span>عرض 1–9 من 66</span>
+          <div class="pager">
+            <a href="#"><svg class="i sm"><use href="#i-chev-r"/></svg></a>
+            <a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">…</a><a href="#">8</a>
+            <a href="#"><svg class="i sm"><use href="#i-chev-l"/></svg></a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+</body>
+</html>

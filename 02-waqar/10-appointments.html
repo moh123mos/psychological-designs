@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مواعيدي · حسابي</title>
+<link rel="stylesheet" href="style.css">
+<script src="../shared/icons.js"></script>
+<script src="../shared/present.js"></script>
+</head>
+<body class="client">
+<div class="device">
+  <div class="screen">
+    <header class="c-title">
+      <h1>مواعيدي</h1>
+      <a class="btn btn-primary btn-sm" href="09-booking.html"><svg class="i"><use href="#i-plus"/></svg>حجز</a>
+    </header>
+
+    <div class="seg full" id="tabs">
+      <button class="on" data-t="up">القادمة <span class="n num">2</span></button>
+      <button data-t="past">السابقة <span class="n num">14</span></button>
+    </div>
+
+    <div id="up" class="num">
+      <article class="appt">
+        <div class="date"><small>الإثنين</small><b>12</b><small>أكتوبر</small></div>
+        <div class="body">
+          <div class="top"><b>10:00 – 10:50</b><span class="chip st-confirmed">مؤكد</span></div>
+          <span class="meta">جلسة فردية · حضوري · د. هالة الشامي</span>
+          <div class="acts">
+            <button class="btn btn-ghost btn-sm"><svg class="i"><use href="#i-repeat"/></svg>طلب تغيير</button>
+            <button class="btn btn-danger btn-sm">طلب إلغاء</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="appt pending">
+        <div class="date"><small>الإثنين</small><b>19</b><small>أكتوبر</small></div>
+        <div class="body">
+          <div class="top"><b>10:00 – 10:50</b><span class="chip st-pending">بانتظار التأكيد</span></div>
+          <span class="meta">جلسة فردية · أُرسل اليوم 10:24</span>
+          <p class="note"><svg class="i"><use href="#i-bell"/></svg>سيصلك إشعار فور رد العيادة على طلبك.</p>
+          <div class="acts"><button class="btn btn-ghost btn-sm">سحب الطلب</button></div>
+        </div>
+      </article>
+
+      <p class="policy">يمكن طلب التغيير أو الإلغاء قبل الموعد بـ 24 ساعة على الأقل.</p>
+    </div>
+
+    <div id="past" class="num" hidden>
+      <article class="appt past">
+        <div class="date"><small>الإثنين</small><b>5</b><small>أكتوبر</small></div>
+        <div class="body">
+          <div class="top"><b>10:00 – 10:50</b><span class="chip st-done">مكتمل</span></div>
+          <span class="meta">جلسة فردية</span>
+        </div>
+      </article>
+      <article class="appt past">
+        <div class="date"><small>الأربعاء</small><b>30</b><small>سبتمبر</small></div>
+        <div class="body">
+          <div class="top"><b>11:30 – 12:20</b><span class="chip st-changed">تم تغييره</span></div>
+          <span class="meta">نُقل من الإثنين 28 سبتمبر بطلب منك</span>
+        </div>
+      </article>
+      <article class="appt past">
+        <div class="date"><small>الإثنين</small><b>21</b><small>سبتمبر</small></div>
+        <div class="body">
+          <div class="top"><b>10:00 – 10:50</b><span class="chip st-cancelled">ملغي</span></div>
+          <span class="meta">أُلغي من العيادة · إجازة رسمية</span>
+        </div>
+      </article>
+      <article class="appt past">
+        <div class="date"><small>الإثنين</small><b>14</b><small>سبتمبر</small></div>
+        <div class="body">
+          <div class="top"><b>10:00 – 10:50</b><span class="chip st-done">مكتمل</span></div>
+          <span class="meta">جلسة فردية</span>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <nav class="tabbar">
+    <a href="08-home.html"><svg class="i"><use href="#i-home"/></svg>الرئيسية</a>
+    <a href="10-appointments.html" class="on"><svg class="i"><use href="#i-calendar"/></svg>مواعيدي</a>
+    <a href="09-booking.html" class="fab"><span class="ic"><svg class="i"><use href="#i-plus"/></svg></span>حجز</a>
+    <a href="#"><svg class="i"><use href="#i-book"/></svg>مذكراتي</a>
+    <a href="#"><svg class="i"><use href="#i-user"/></svg>ملفي</a>
+  </nav>
+</div>
+<script>
+  document.querySelectorAll('#tabs button').forEach(b => b.onclick = () => {
+    document.querySelectorAll('#tabs button').forEach(x => x.classList.toggle('on', x === b));
+    document.getElementById('up').hidden = b.dataset.t !== 'up';
+    document.getElementById('past').hidden = b.dataset.t !== 'past';
+  });
+</script>
+</body>
+</html>

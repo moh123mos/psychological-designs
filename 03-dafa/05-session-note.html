@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>توثيق جلسة · العيادة</title>
+<link rel="stylesheet" href="style.css">
+<script src="../shared/icons.js"></script>
+<script src="../shared/present.js"></script>
+</head>
+<body class="staff">
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark"><svg class="i"><use href="#i-leaf"/></svg></span>
+      <div><b>عيادة د. هالة الشامي</b><small>للإرشاد والعلاج النفسي</small></div>
+    </div>
+    <div class="nav-label">العيادة</div>
+    <nav class="nav">
+      <a href="01-dashboard.html"><svg class="i"><use href="#i-dashboard"/></svg>الرئيسية</a>
+      <a href="02-calendar.html"><svg class="i"><use href="#i-calendar"/></svg>المواعيد<span class="badge">3</span></a>
+      <a href="03-clients.html"><svg class="i"><use href="#i-users"/></svg>المراجعون</a>
+    </nav>
+    <div class="nav-label">المتابعة</div>
+    <nav class="nav">
+      <a href="05-session-note.html" class="active"><svg class="i"><use href="#i-note"/></svg>الجلسات</a>
+      <a href="04-client-file.html" class="secondary"><svg class="i"><use href="#i-target"/></svg>الخطط والأهداف</a>
+      <a href="06-assessments.html"><svg class="i"><use href="#i-chart"/></svg>التقييمات</a>
+    </nav>
+    <div class="nav-label">النظام</div>
+    <nav class="nav">
+      <a href="#" class="secondary"><svg class="i"><use href="#i-megaphone"/></svg>الإشعارات والإعلانات</a>
+      <a href="#" class="secondary"><svg class="i"><use href="#i-settings"/></svg>الإعدادات</a>
+    </nav>
+    <div class="sidebar-foot">
+      <span class="avatar">هـ</span>
+      <div><b>د. هالة الشامي</b><small>أخصائية نفسية</small></div>
+      <button class="icon-btn" title="تسجيل الخروج"><svg class="i"><use href="#i-logout"/></svg></button>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="search input-icon">
+        <svg class="i"><use href="#i-search"/></svg>
+        <input class="input" type="search" placeholder="ابحث باسم المراجع أو رقم الملف…">
+      </div>
+      <div class="today"><svg class="i sm"><use href="#i-calendar"/></svg><span>اليوم</span> <b class="num">الأحد 11 أكتوبر 2026</b></div>
+      <button class="icon-btn" title="الإشعارات"><svg class="i"><use href="#i-bell"/></svg><span class="dot"></span></button>
+      <span class="avatar">هـ</span>
+    </header>
+
+    <main class="content">
+      <nav class="crumbs"><a href="03-clients.html">المراجعون</a><svg class="i"><use href="#i-chev-l"/></svg><a href="04-client-file.html">ليان أحمد</a><svg class="i"><use href="#i-chev-l"/></svg><span>توثيق جلسة</span></nav>
+
+      <div class="page-head">
+        <div>
+          <h1>توثيق جلسة · ليان أحمد</h1>
+          <p class="sub num" style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+            <span>#1024 · طفلة · 8 سنوات</span><span>·</span>
+            <span>الأحد 11 أكتوبر 2026 · 09:00 – 09:45</span>
+            <span class="tag"><svg class="i"><use href="#i-calendar"/></svg>مرتبطة بالموعد</span>
+          </p>
+        </div>
+        <div class="actions">
+          <span class="chip st-draft">مسودة</span>
+          <span class="saved num"><svg class="i"><use href="#i-check-circle"/></svg>حُفظت تلقائيًا 10:24</span>
+          <button class="btn btn-ghost">حفظ كمسودة</button>
+          <button class="btn btn-primary"><svg class="i"><use href="#i-check"/></svg>اعتماد الملاحظة</button>
+        </div>
+      </div>
+
+      <div class="note-grid">
+        <section class="card" style="padding:28px 30px">
+          <div class="section">
+            <div class="section-head"><h3><span class="n num">1</span>معلومات الجلسة</h3></div>
+            <div class="grid-3">
+              <div class="field"><label>نوع الجلسة</label>
+                <select class="select"><option>جلسة متابعة فردية</option><option>جلسة مع ولي الأمر</option><option>تقييم</option></select></div>
+              <div class="field"><label>المدة الفعلية</label><input class="input num" value="45 دقيقة"></div>
+              <div class="field"><label>طريقة الحضور</label>
+                <select class="select"><option>حضوري</option><option>عن بُعد</option></select></div>
+            </div>
+            <div class="field">
+              <span class="label">الحاضرون</span>
+              <div class="pick">
+                <label class="on"><svg class="i sm"><use href="#i-check"/></svg>ليان</label>
+                <label class="on"><svg class="i sm"><use href="#i-check"/></svg>الأم (سارة الأحمد)</label>
+                <label>الأب</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="section-head"><h3><span class="n num">2</span>ملخص الجلسة</h3></div>
+            <textarea class="textarea" style="min-height:130px">بدأت ليان الجلسة بهدوء نسبي، وتحدثت عن يومها في المدرسة. عبّرت عن شعورها بالتوتر صباح الأحد قبل مغادرة المنزل، واستطاعت تسمية الشعور باستخدام بطاقات المشاعر. طبّقنا تمرين «التنفس كالبالون» مرتين، ونفذته في المرة الثانية دون مساعدة.</textarea>
+          </div>
+
+          <div class="section">
+            <div class="section-head">
+              <h3><span class="n num">3</span>الملاحظات المهنية</h3>
+              <span class="tag private"><svg class="i"><use href="#i-lock"/></svg>خاصة بالأخصائية · لا تظهر للمراجع</span>
+            </div>
+            <textarea class="textarea private" placeholder="انطباعاتك المهنية، الفرضيات، ما لاحظتِه في التفاعل…">تراجع واضح في حدة القلق المرتبط بالانفصال مقارنة بالشهر الماضي. ما زالت تحتاج إلى طمأنة عند الانتقال بين الأنشطة. تعاون الأم ممتاز في تطبيق الروتين المنزلي.</textarea>
+          </div>
+
+          <div class="section">
+            <div class="section-head">
+              <h3><span class="n num">4</span>الأهداف التي تمت متابعتها</h3>
+              <a class="add-link" href="04-client-file.html"><svg class="i sm"><use href="#i-target"/></svg>الخطة الكاملة</a>
+            </div>
+            <div class="goal-edit on">
+              <div class="top">
+                <span class="check on"><svg class="i"><use href="#i-check"/></svg></span>
+                <b>التعبير عن مشاعر القلق بالكلمات</b>
+                <select class="select"><option>قيد العمل</option><option>يحتاج إلى مراجعة</option><option>تحقق</option><option>عُلّق مؤقتًا</option></select>
+              </div>
+              <input class="input" value="سمّت الشعور بنفسها مرتين دون تلقين.">
+            </div>
+            <div class="goal-edit on">
+              <div class="top">
+                <span class="check on"><svg class="i"><use href="#i-check"/></svg></span>
+                <b>تطبيق تمرين التنفس قبل الذهاب إلى المدرسة</b>
+                <select class="select"><option>قيد العمل</option><option>يحتاج إلى مراجعة</option><option>تحقق</option></select>
+              </div>
+              <input class="input" value="طبّقته 4 أيام من 5 حسب سجل الأم المنزلي.">
+            </div>
+            <div class="goal-edit">
+              <div class="top">
+                <span class="check"><svg class="i"><use href="#i-check"/></svg></span>
+                <b style="color:var(--muted)">تقليل نوبات البكاء صباحًا</b>
+                <span class="hint">لم يُتابع في هذه الجلسة</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="section-head"><h3><span class="n num">5</span>نقاط للمتابعة والخطوة القادمة</h3></div>
+            <div class="list-edit">
+              <div><svg class="i sm"><use href="#i-chev-l"/></svg>تجربة جدول صباحي مصوّر مع الأم</div>
+              <div><svg class="i sm"><use href="#i-chev-l"/></svg>إدخال نشاط انتقال تدريجي في بداية الجلسة القادمة</div>
+            </div>
+            <a class="add-link" href="#"><svg class="i sm"><use href="#i-plus"/></svg>إضافة نقطة</a>
+          </div>
+
+          <div class="section">
+            <div class="section-head"><h3><span class="n num">6</span>المرفقات</h3></div>
+            <div class="drop">
+              <span class="icon-btn"><svg class="i"><use href="#i-upload"/></svg></span>
+              <span>اسحبي الملف هنا أو <a href="#" style="color:var(--sage-600);font-weight:700">اختاري من الجهاز</a><br><small>PDF أو صورة · حتى 10 ميغابايت · تُحفظ بشكل آمن</small></span>
+            </div>
+            <div><span class="file-pill"><svg class="i sm"><use href="#i-note"/></svg>ورقة نشاط المشاعر.pdf<span class="muted num">· 240 ك.ب</span></span></div>
+          </div>
+
+          <div class="form-foot">
+            <p class="hint" style="display:flex;gap:6px;align-items:center"><svg class="i sm"><use href="#i-history"/></svg>بعد الاعتماد، أي تعديل يُحفظ كنسخة جديدة مع التوقيت ولا يُغيَّر بصمت.</p>
+            <div style="display:flex;gap:10px">
+              <button class="btn btn-ghost">حفظ كمسودة</button>
+              <button class="btn btn-primary"><svg class="i"><use href="#i-check"/></svg>اعتماد الملاحظة</button>
+            </div>
+          </div>
+        </section>
+
+        <aside>
+          <section class="card tint">
+            <div class="card-head"><h2><svg class="i"><use href="#i-history"/></svg>قبل أن تبدئي</h2></div>
+            <div class="ctx-section">
+              <h4><span>الجلسة السابقة</span><span class="num muted" style="font-weight:500">4 أكتوبر</span></h4>
+              <p>بكاء متكرر عند وصولها للمدرسة الأسبوع الماضي. بدأنا بطاقات المشاعر وتمرين التنفس.</p>
+            </div>
+            <div class="ctx-section">
+              <h4>متابعة مقترحة من الجلسة السابقة</h4>
+              <ul>
+                <li><svg class="i"><use href="#i-check-circle"/></svg>مراجعة سجل الأم المنزلي</li>
+                <li><svg class="i"><use href="#i-check-circle"/></svg>تكرار تمرين التنفس داخل الجلسة</li>
+              </ul>
+            </div>
+            <div class="ctx-section">
+              <h4>الأهداف النشطة</h4>
+              <ul>
+                <li><svg class="i"><use href="#i-target"/></svg>التعبير عن مشاعر القلق بالكلمات</li>
+                <li><svg class="i"><use href="#i-target"/></svg>تطبيق تمرين التنفس قبل المدرسة</li>
+                <li><svg class="i"><use href="#i-target"/></svg>تقليل نوبات البكاء صباحًا</li>
+              </ul>
+            </div>
+            <div class="ctx-section">
+              <h4><span>آخر تقييم</span><span class="num muted" style="font-weight:500">20 أغسطس</span></h4>
+              <p>مقياس قلق الطفولة (تقرير ولي الأمر) — أُضيفت ملاحظات تفسيرية.</p>
+              <a class="add-link" href="06-assessments.html">عرض التقييمات <svg class="i sm"><use href="#i-chev-l"/></svg></a>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </main>
+  </div>
+</div>
+</body>
+</html>

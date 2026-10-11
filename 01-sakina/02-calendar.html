@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المواعيد · العيادة</title>
+<link rel="stylesheet" href="style.css">
+<script src="../shared/icons.js"></script>
+<script src="../shared/present.js"></script>
+</head>
+<body class="staff">
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark"><svg class="i"><use href="#i-leaf"/></svg></span>
+      <div><b>عيادة د. هالة الشامي</b><small>للإرشاد والعلاج النفسي</small></div>
+    </div>
+    <div class="nav-label">العيادة</div>
+    <nav class="nav">
+      <a href="01-dashboard.html"><svg class="i"><use href="#i-dashboard"/></svg>الرئيسية</a>
+      <a href="02-calendar.html" class="active"><svg class="i"><use href="#i-calendar"/></svg>المواعيد<span class="badge">3</span></a>
+      <a href="03-clients.html"><svg class="i"><use href="#i-users"/></svg>المراجعون</a>
+    </nav>
+    <div class="nav-label">المتابعة</div>
+    <nav class="nav">
+      <a href="05-session-note.html"><svg class="i"><use href="#i-note"/></svg>الجلسات</a>
+      <a href="04-client-file.html" class="secondary"><svg class="i"><use href="#i-target"/></svg>الخطط والأهداف</a>
+      <a href="06-assessments.html"><svg class="i"><use href="#i-chart"/></svg>التقييمات</a>
+    </nav>
+    <div class="nav-label">النظام</div>
+    <nav class="nav">
+      <a href="#" class="secondary"><svg class="i"><use href="#i-megaphone"/></svg>الإشعارات والإعلانات</a>
+      <a href="#" class="secondary"><svg class="i"><use href="#i-settings"/></svg>الإعدادات</a>
+    </nav>
+    <div class="sidebar-foot">
+      <span class="avatar">هـ</span>
+      <div><b>د. هالة الشامي</b><small>أخصائية نفسية</small></div>
+      <button class="icon-btn" title="تسجيل الخروج"><svg class="i"><use href="#i-logout"/></svg></button>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="search input-icon">
+        <svg class="i"><use href="#i-search"/></svg>
+        <input class="input" type="search" placeholder="ابحث في المواعيد بالاسم أو رقم الملف أو التاريخ…">
+      </div>
+      <div class="today"><svg class="i sm"><use href="#i-calendar"/></svg><span>اليوم</span> <b class="num">الأحد 11 أكتوبر 2026</b></div>
+      <button class="icon-btn" title="الإشعارات"><svg class="i"><use href="#i-bell"/></svg><span class="dot"></span></button>
+      <span class="avatar">هـ</span>
+    </header>
+
+    <main class="content">
+      <div class="page-head">
+        <div>
+          <h1>المواعيد</h1>
+          <p class="sub num">17 موعدًا هذا الأسبوع · 3 طلبات بانتظار ردك</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-ghost" href="#"><svg class="i"><use href="#i-clock"/></svg>الأوقات المتاحة والإجازات</a>
+          <a class="btn btn-primary" href="#"><svg class="i"><use href="#i-calendar-plus"/></svg>موعد جديد</a>
+        </div>
+      </div>
+
+      <div class="cal-tools">
+        <div class="seg" role="tablist">
+          <button>يومي</button>
+          <button class="on">أسبوعي</button>
+          <button>شهري</button>
+          <button>قائمة</button>
+        </div>
+        <div class="week-nav">
+          <button class="icon-btn sm" title="الأسبوع السابق"><svg class="i"><use href="#i-chev-r"/></svg></button>
+          <b class="num">11 – 15 أكتوبر 2026</b>
+          <button class="icon-btn sm" title="الأسبوع التالي"><svg class="i"><use href="#i-chev-l"/></svg></button>
+          <button class="btn btn-ghost btn-sm">اليوم</button>
+        </div>
+        <div class="legend">
+          <span class="chip st-new">طلب جديد</span>
+          <span class="chip st-pending">بانتظار التأكيد</span>
+          <span class="chip st-confirmed">مؤكد</span>
+          <span class="chip st-done">مكتمل</span>
+          <span class="chip st-changed">تم تغييره</span>
+          <span class="chip st-cancelled">ملغي</span>
+        </div>
+      </div>
+
+      <div class="cal-layout">
+        <!-- التقويم الأسبوعي -->
+        <section class="card cal">
+          <div class="cal-head">
+            <div></div>
+            <div class="today">الأحد<b class="num">11</b></div>
+            <div>الإثنين<b class="num">12</b></div>
+            <div>الثلاثاء<b class="num">13</b></div>
+            <div>الأربعاء<b class="num">14</b></div>
+            <div>الخميس<b class="num">15</b></div>
+          </div>
+          <div class="cal-body num">
+            <!-- خلفية الأعمدة -->
+            <div class="col today" style="grid-column:2"></div>
+            <div class="col" style="grid-column:3"></div>
+            <div class="col" style="grid-column:4"></div>
+            <div class="col" style="grid-column:5"></div>
+            <div class="col" style="grid-column:6"></div>
+            <!-- الساعات (كل صف = 30 دقيقة، يبدأ 09:00) -->
+            <div class="t" style="grid-row:1/span 2">09:00</div>
+            <div class="t" style="grid-row:3/span 2">10:00</div>
+            <div class="t" style="grid-row:5/span 2">11:00</div>
+            <div class="t" style="grid-row:7/span 2">12:00</div>
+            <div class="t" style="grid-row:9/span 2">13:00</div>
+            <div class="t" style="grid-row:11/span 2">14:00</div>
+            <div class="t" style="grid-row:13/span 2">15:00</div>
+            <div class="t" style="grid-row:15/span 2">16:00</div>
+
+            <!-- استراحة يومية -->
+            <div class="cal-block" style="grid-column:2/7;grid-row:9"><svg class="i sm"><use href="#i-coffee"/></svg>استراحة</div>
+
+            <!-- الأحد -->
+            <div class="ev st-done" style="grid-column:2;grid-row:1/span 2"><b>ليان أحمد</b><span>09:00 · مكتمل</span></div>
+            <div class="ev st-confirmed" style="grid-column:2;grid-row:3/span 2"><b>عمر خالد</b><span>10:00 – 10:50</span></div>
+            <div class="now-line" title="الآن 10:20"></div>
+            <div class="ev st-confirmed" style="grid-column:2;grid-row:6/span 2"><b>نورة سالم</b><span>11:30 – 12:20</span></div>
+            <div class="ev st-confirmed" style="grid-column:2;grid-row:11/span 2"><b>يوسف العتيبي</b><span>14:00 – 15:00</span></div>
+            <div class="ev st-confirmed" style="grid-column:2;grid-row:14/span 2"><b>فيصل الحربي</b><span>15:30 · تقييم أولي</span></div>
+            <!-- الإثنين -->
+            <div class="ev st-confirmed" style="grid-column:3;grid-row:3/span 2"><b>دانة فهد</b><span>10:00 – 10:50</span></div>
+            <div class="ev st-confirmed" style="grid-column:3;grid-row:7/span 2"><b>مها عبدالله</b><span>12:00 · طلبت تغييره</span></div>
+            <div class="ev st-cancelled" style="grid-column:3;grid-row:15/span 2"><b>خالد منصور</b><span>16:00 · ملغي</span></div>
+            <div class="ev st-confirmed" style="grid-column:3;grid-row:12/span 2"><b>عبدالرحمن سعيد</b><span>14:30 – 15:20</span></div>
+            <!-- الثلاثاء -->
+            <div class="ev st-new selected" style="grid-column:4;grid-row:5/span 2"><b>سلمان ناصر</b><span>11:00 · طلب جديد</span></div>
+            <div class="ev st-confirmed" style="grid-column:4;grid-row:13/span 2"><b>ريم الدوسري</b><span>15:00 – 15:50</span></div>
+            <!-- الأربعاء -->
+            <div class="ev st-confirmed" style="grid-column:5;grid-row:4/span 2"><b>جود ماجد</b><span>10:30 – 11:15</span></div>
+            <div class="ev st-pending" style="grid-column:5;grid-row:15/span 2"><b>مها عبدالله</b><span>16:00 · طلب تغيير</span></div>
+            <!-- الخميس -->
+            <div class="ev st-new" style="grid-column:6;grid-row:2/span 2"><b>لمى سعد</b><span>09:30 · طلب جديد</span></div>
+            <div class="ev st-changed" style="grid-column:6;grid-row:5/span 2"><b>عبدالله فارس</b><span>11:00 · نُقل من الأربعاء</span></div>
+            <div class="cal-block" style="grid-column:6;grid-row:7/span 2"><svg class="i sm"><use href="#i-lock"/></svg>وقت محجوب · اجتماع إشرافي</div>
+          </div>
+        </section>
+
+        <!-- تفاصيل الطلب المحدد -->
+        <aside class="stack">
+          <section class="card detail">
+            <div class="card-head" style="margin-bottom:0">
+              <span class="chip st-new">طلب جديد</span>
+              <button class="icon-btn sm" title="إغلاق"><svg class="i"><use href="#i-x"/></svg></button>
+            </div>
+            <div class="who">
+              <span class="avatar lg av-3">س</span>
+              <div><b>سلمان ناصر</b><span class="muted num">ملف #1060 · بالغ · مراجع جديد</span></div>
+            </div>
+            <div class="dl num">
+              <div><span class="k">الموعد المطلوب</span><span class="v">الثلاثاء 13 أكتوبر · 11:00 – 11:50</span></div>
+              <div><span class="k">نوع الجلسة</span><span class="v">جلسة فردية · 50 دقيقة</span></div>
+              <div><span class="k">أُرسل الطلب</span><span class="v">اليوم 08:12 صباحًا</span></div>
+              <div><span class="k">ملاحظة المراجع</span><span class="v" style="font-weight:500">أفضّل الفترة الصباحية إن أمكن.</span></div>
+            </div>
+            <div class="checks">
+              <div><svg class="i"><use href="#i-check-circle"/></svg>لا يوجد حجز آخر له هذا الأسبوع</div>
+              <div><svg class="i"><use href="#i-check-circle"/></svg>الوقت متاح ولا يتعارض مع موعد آخر</div>
+            </div>
+            <div class="field">
+              <label for="org">ملاحظة تنظيمية <span class="muted" style="font-weight:500">(تظهر للمراجع)</span></label>
+              <textarea id="org" class="textarea" style="min-height:76px" placeholder="مثال: يُرجى الحضور قبل الموعد بـ 10 دقائق لاستكمال البيانات."></textarea>
+            </div>
+            <div class="btns">
+              <button class="btn btn-primary btn-lg btn-block"><svg class="i"><use href="#i-check"/></svg>تأكيد الموعد</button>
+              <div class="two">
+                <button class="btn btn-soft"><svg class="i"><use href="#i-repeat"/></svg>اقتراح بديل</button>
+                <button class="btn btn-danger">رفض الطلب</button>
+              </div>
+            </div>
+            <p class="hint" style="margin-top:12px;display:flex;gap:6px"><svg class="i sm"><use href="#i-bell"/></svg>سيصل إشعار للمراجع فور اتخاذ القرار، ويُسجَّل الإجراء في سجل العمليات.</p>
+          </section>
+
+          <section class="card">
+            <div class="card-head"><h2>طلبات أخرى <span class="count num">2</span></h2></div>
+            <div class="rows">
+              <div class="row">
+                <span class="avatar sm av-4">م</span>
+                <div class="grow"><b>مها عبدالله</b><span class="num">تغيير من الإثنين 12:00 ← الأربعاء 16:00</span></div>
+                <span class="chip st-pending">تغيير</span>
+              </div>
+              <div class="row">
+                <span class="avatar sm">ل</span>
+                <div class="grow"><b>لمى سعد</b><span class="num">الخميس 15 أكتوبر · 09:30</span></div>
+                <span class="chip st-new">جديد</span>
+              </div>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </main>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تصاميم تطبيق العيادة</title>
+  <link rel="stylesheet" href="shared/gallery.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div>
+        <div class="eyebrow">تطبيق إدارة العيادة النفسية</div>
+        <h1>اختيار التصميم</h1>
+        <p class="lead">كل تصميم يعرض الشاشات العشر نفسها بالمحتوى والبيانات نفسها، والاختلاف في الشكل البصري فقط،
+          لتسهيل المقارنة.</p>
+      </div>
+    </header>
+
+    <div class="designs" id="designs"></div>
+
+    <p class="note"><b>الشاشات في كل تصميم:</b> <br> لوحة التحكم · المواعيد وطلبات الحجز · قائمة المراجعين · ملف المراجع
+      · توثيق جلسة · التقييمات (واجهة الأخصائية) <br> تسجيل الدخول · الرئيسية · حجز موعد · مواعيدي (واجهة المراجع).</p>
+  </div>
+  <script>
+    // لإضافة تصميم جديد: أضف سطرًا هنا بمسار مجلده (بعد نسخ مجلد 01-sakina وتغيير style.css فقط)
+    const DESIGNS = [
+      { dir: '01-sakina', name: 'سكينة', desc: 'هادئ وناعم · عاجي وأخضر مريمي وبيج · زوايا مستديرة' },
+      { dir: '02-waqar', name: 'وقار', desc: 'احترافي هادئ · شريط جانبي أخضر داكن · حدود واضحة · خط Cairo' },
+      { dir: '03-dafa', name: 'دفء', desc: 'دافئ وبسيط · رملي وزيتوني · أزرار كبسولية وعناصر أكبر' }
+    ];
+    const el = document.getElementById('designs');
+    el.innerHTML = DESIGNS.map((d, i) => d.dir ? `
+    <a class="design" href="${d.dir}/index.html">
+      <div class="thumb"><iframe src="${d.dir}/01-dashboard.html" width="1440" height="900" loading="lazy" tabindex="-1" title="${d.name}"></iframe></div>
+      <div class="body"><b>${i + 1}. ${d.name}</b><p>${d.desc}</p></div>
+    </a>` : `
+    <div class="design soon"><div class="thumb">قريبًا</div><div class="body"><b>${d.name}</b><p>${d.desc}</p></div></div>`).join('');
+    const fit = () => document.querySelectorAll('.thumb iframe').forEach(f => f.style.transform = `scale(${f.parentElement.clientWidth / f.width})`);
+    fit(); addEventListener('resize', fit);
+  </script>
+</body>
+
+</html>

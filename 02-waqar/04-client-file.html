@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ملف المراجع · العيادة</title>
+<link rel="stylesheet" href="style.css">
+<script src="../shared/icons.js"></script>
+<script src="../shared/present.js"></script>
+</head>
+<body class="staff">
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark"><svg class="i"><use href="#i-leaf"/></svg></span>
+      <div><b>عيادة د. هالة الشامي</b><small>للإرشاد والعلاج النفسي</small></div>
+    </div>
+    <div class="nav-label">العيادة</div>
+    <nav class="nav">
+      <a href="01-dashboard.html"><svg class="i"><use href="#i-dashboard"/></svg>الرئيسية</a>
+      <a href="02-calendar.html"><svg class="i"><use href="#i-calendar"/></svg>المواعيد<span class="badge">3</span></a>
+      <a href="03-clients.html" class="active"><svg class="i"><use href="#i-users"/></svg>المراجعون</a>
+    </nav>
+    <div class="nav-label">المتابعة</div>
+    <nav class="nav">
+      <a href="05-session-note.html"><svg class="i"><use href="#i-note"/></svg>الجلسات</a>
+      <a href="04-client-file.html" class="secondary"><svg class="i"><use href="#i-target"/></svg>الخطط والأهداف</a>
+      <a href="06-assessments.html"><svg class="i"><use href="#i-chart"/></svg>التقييمات</a>
+    </nav>
+    <div class="nav-label">النظام</div>
+    <nav class="nav">
+      <a href="#" class="secondary"><svg class="i"><use href="#i-megaphone"/></svg>الإشعارات والإعلانات</a>
+      <a href="#" class="secondary"><svg class="i"><use href="#i-settings"/></svg>الإعدادات</a>
+    </nav>
+    <div class="sidebar-foot">
+      <span class="avatar">هـ</span>
+      <div><b>د. هالة الشامي</b><small>أخصائية نفسية</small></div>
+      <button class="icon-btn" title="تسجيل الخروج"><svg class="i"><use href="#i-logout"/></svg></button>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="search input-icon">
+        <svg class="i"><use href="#i-search"/></svg>
+        <input class="input" type="search" placeholder="ابحث باسم المراجع أو رقم الملف…">
+      </div>
+      <div class="today"><svg class="i sm"><use href="#i-calendar"/></svg><span>اليوم</span> <b class="num">الأحد 11 أكتوبر 2026</b></div>
+      <button class="icon-btn" title="الإشعارات"><svg class="i"><use href="#i-bell"/></svg><span class="dot"></span></button>
+      <span class="avatar">هـ</span>
+    </header>
+
+    <main class="content">
+      <nav class="crumbs"><a href="03-clients.html">المراجعون</a><svg class="i"><use href="#i-chev-l"/></svg><span>يوسف العتيبي</span></nav>
+
+      <!-- رأس الملف -->
+      <section class="card file-head">
+        <span class="avatar lg av-4">ي</span>
+        <div class="info">
+          <h1>يوسف العتيبي</h1>
+          <div class="chips num">
+            <span class="tag">ملف #1045</span>
+            <span class="tag">حالة نمائية</span>
+            <span class="tag">6 سنوات</span>
+            <span class="chip st-active">نشط</span>
+          </div>
+          <div class="meta num">
+            <span><svg class="i sm"><use href="#i-user"/></svg>ولي الأمر: أمل العتيبي (الأم)</span>
+            <span><svg class="i sm"><use href="#i-history"/></svg>يُتابَع منذ 19 يناير 2025</span>
+            <span><svg class="i sm"><use href="#i-folder"/></svg>قالب: الحالات النمائية</span>
+          </div>
+        </div>
+        <div class="actions">
+          <a class="btn btn-ghost" href="#"><svg class="i"><use href="#i-calendar-plus"/></svg>حجز موعد</a>
+          <a class="btn btn-soft" href="06-assessments.html"><svg class="i"><use href="#i-chart"/></svg>إضافة تقييم</a>
+          <a class="btn btn-primary" href="05-session-note.html"><svg class="i"><use href="#i-edit"/></svg>توثيق جلسة</a>
+          <button class="icon-btn" title="المزيد"><svg class="i"><use href="#i-more"/></svg></button>
+        </div>
+      </section>
+
+      <nav class="tabs num">
+        <a href="#" class="on">نظرة عامة</a>
+        <a href="#">المعلومات الأساسية</a>
+        <a href="#">تاريخ الحالة</a>
+        <a href="#">الجلسات <small>38</small></a>
+        <a href="#">الخطة والأهداف <small>3</small></a>
+        <a href="06-assessments.html">التقييمات <small>4</small></a>
+        <a href="#">المواعيد</a>
+        <a href="#">المرفقات <small>6</small></a>
+        <a href="#"><svg class="i sm"><use href="#i-lock"/></svg>سجل التغييرات</a>
+      </nav>
+
+      <div class="file-grid">
+        <div>
+          <div class="facts num">
+            <div><b>38</b><span>جلسة موثقة</span></div>
+            <div><b>21 شهرًا</b><span>مدة المتابعة</span></div>
+            <div><b>2</b><span>أهداف قيد العمل</span></div>
+            <div><b>14 سبتمبر</b><span>آخر تقييم</span></div>
+          </div>
+
+          <div class="stack">
+            <!-- الأهداف -->
+            <section class="card">
+              <div class="card-head">
+                <h2>الأهداف الحالية</h2>
+                <a class="link" href="#"><svg class="i sm"><use href="#i-plus"/></svg>إضافة هدف</a>
+              </div>
+              <div class="goal">
+                <div class="goal-top"><b>طلب الأشياء باستخدام جملة من كلمتين</b><span class="chip g-progress">قيد العمل</span></div>
+                <div class="meta num">
+                  <span><svg class="i sm"><use href="#i-calendar"/></svg>بدأ 2 مارس 2026</span>
+                  <span><svg class="i sm"><use href="#i-clock"/></svg>المراجعة 30 نوفمبر</span>
+                  <span title="تمت متابعته في آخر 8 جلسات">
+                    <span class="track"><i class="y"></i><i class="y"></i><i class="y"></i><i></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i></span>
+                    تابع في 7 من آخر 8 جلسات
+                  </span>
+                </div>
+                <p class="last">آخر ملاحظة (4 أكتوبر): استخدم «أريد كرة» و«أعطني ماء» بتلقين بصري خفيف في 6 من 10 محاولات.</p>
+              </div>
+              <div class="goal">
+                <div class="goal-top"><b>انتظار الدور في نشاط جماعي لمدة 3 دقائق</b><span class="chip g-review">يحتاج إلى مراجعة</span></div>
+                <div class="meta num">
+                  <span><svg class="i sm"><use href="#i-calendar"/></svg>بدأ 1 سبتمبر 2026</span>
+                  <span><svg class="i sm"><use href="#i-clock"/></svg>المراجعة 15 أكتوبر</span>
+                  <span><span class="track"><i class="y"></i><i></i><i class="y"></i><i></i><i></i><i class="y"></i></span>تابع في 3 من 6 جلسات</span>
+                </div>
+              </div>
+              <div class="goal">
+                <div class="goal-top"><b>ارتداء الحذاء باستقلالية</b><span class="chip g-achieved">تحقق</span></div>
+                <div class="meta num"><span><svg class="i sm"><use href="#i-check-circle"/></svg>أُغلق 20 أغسطس 2026</span></div>
+              </div>
+            </section>
+
+            <!-- الخط الزمني -->
+            <section class="card">
+              <div class="card-head">
+                <h2>الخط الزمني</h2>
+                <div class="filter-chips">
+                  <a href="#" class="on">الكل</a><a href="#">الجلسات</a><a href="#">التقييمات</a><a href="#">الأهداف</a><a href="#">إداري</a>
+                </div>
+              </div>
+              <div class="timeline num">
+                <div class="tl">
+                  <span class="tl-dot next"><svg class="i"><use href="#i-calendar"/></svg></span>
+                  <div class="tl-body">
+                    <div class="top"><b>الموعد القادم · جلسة نمائية مع ولي الأمر</b><span class="chip st-confirmed">مؤكد</span></div>
+                    <time>اليوم · 14:00 – 15:00</time>
+                  </div>
+                </div>
+                <div class="tl">
+                  <span class="tl-dot"><svg class="i"><use href="#i-note"/></svg></span>
+                  <div class="tl-body">
+                    <div class="top"><b>الجلسة 38</b><time>4 أكتوبر 2026</time></div>
+                    <p>تدريب على طلب الأشياء بجملة من كلمتين باستخدام بطاقات الصور، مع تطبيق نشاط تبادل الأدوار في اللعب.</p>
+                    <div class="foot"><span class="tag"><svg class="i"><use href="#i-check"/></svg>معتمدة</span><span class="tag">هدفان</span><span class="tag"><svg class="i"><use href="#i-clip"/></svg>مرفق</span></div>
+                  </div>
+                </div>
+                <div class="tl">
+                  <span class="tl-dot assess"><svg class="i"><use href="#i-chart"/></svg></span>
+                  <div class="tl-body">
+                    <div class="top"><b>تقييم دوري للمهارات التكيفية</b><time>14 سبتمبر 2026</time></div>
+                    <p>تحسن ملحوظ في مجال المهارات اليومية مقارنة بتقييم مارس. مجال التواصل الاجتماعي ما زال أولوية.</p>
+                    <div class="foot"><a class="btn btn-ghost btn-sm" href="06-assessments.html">عرض النتائج</a></div>
+                  </div>
+                </div>
+                <div class="tl">
+                  <span class="tl-dot goal"><svg class="i"><use href="#i-target"/></svg></span>
+                  <div class="tl-body">
+                    <div class="top"><b>تحديث الخطة: إضافة هدف «انتظار الدور»</b><time>1 سبتمبر 2026</time></div>
+                  </div>
+                </div>
+                <div class="tl">
+                  <span class="tl-dot goal"><svg class="i"><use href="#i-check-circle"/></svg></span>
+                  <div class="tl-body">
+                    <div class="top"><b>هدف تحقق: ارتداء الحذاء باستقلالية</b><time>20 أغسطس 2026</time></div>
+                  </div>
+                </div>
+                <div class="tl-year">2025</div>
+                <div class="tl">
+                  <span class="tl-dot admin"><svg class="i"><use href="#i-folder"/></svg></span>
+                  <div class="tl-body">
+                    <div class="top"><b>فتح الملف وربطه بحساب ولي الأمر</b><time>19 يناير 2025</time></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <aside class="stack">
+          <section class="card">
+            <div class="card-head"><h2>معلومات أساسية</h2><a class="link" href="#"><svg class="i sm"><use href="#i-edit"/></svg>تعديل</a></div>
+            <div class="kv num">
+              <div><span>تاريخ الميلاد</span><b>3 مايو 2020</b></div>
+              <div><span>ولي الأمر</span><b>أمل العتيبي (الأم) · <bdi dir="ltr">05•• ••• 4471</bdi></b></div>
+              <div><span>المخولون بالتواصل</span><b>أمل العتيبي، فهد العتيبي (الأب)</b></div>
+              <div><span>حساب التطبيق</span><b>مرتبط بحساب ولي الأمر</b></div>
+              <div><span>سبب المراجعة الأولي</span><b style="font-weight:500">تأخر في التواصل اللفظي ومهارات اللعب مع الأقران.</b></div>
+            </div>
+          </section>
+
+          <section class="card tint">
+            <div class="card-head"><h2>المواعيد</h2></div>
+            <div class="kv num">
+              <div><span>القادم</span><b>اليوم · 14:00 (مؤكد)</b></div>
+              <div><span>النمط</span><b>أسبوعي · الأحد</b></div>
+              <div><span>الحضور آخر 3 أشهر</span><b>11 من 12 موعدًا</b></div>
+            </div>
+          </section>
+
+          <div class="private-box">
+            <svg class="i"><use href="#i-lock"/></svg>
+            <div><b>محتوى مهني خاص</b>الملاحظات المهنية والتقييمات والتقارير لا تظهر في حساب ولي الأمر أو المراجع.</div>
+          </div>
+
+          <p class="hint num" style="display:flex;gap:6px;align-items:center"><svg class="i sm"><use href="#i-history"/></svg>آخر تعديل على الملف: 4 أكتوبر 2026 · د. هالة</p>
+        </aside>
+      </div>
+    </main>
+  </div>
+</div>
+</body>
+</html>

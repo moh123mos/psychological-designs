@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>لوحة التحكم · العيادة</title>
+<link rel="stylesheet" href="style.css">
+<script src="../shared/icons.js"></script>
+<script src="../shared/present.js"></script>
+</head>
+<body class="staff">
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark"><svg class="i"><use href="#i-leaf"/></svg></span>
+      <div><b>عيادة د. هالة الشامي</b><small>للإرشاد والعلاج النفسي</small></div>
+    </div>
+    <div class="nav-label">العيادة</div>
+    <nav class="nav">
+      <a href="01-dashboard.html" class="active"><svg class="i"><use href="#i-dashboard"/></svg>الرئيسية</a>
+      <a href="02-calendar.html"><svg class="i"><use href="#i-calendar"/></svg>المواعيد<span class="badge">3</span></a>
+      <a href="03-clients.html"><svg class="i"><use href="#i-users"/></svg>المراجعون</a>
+    </nav>
+    <div class="nav-label">المتابعة</div>
+    <nav class="nav">
+      <a href="05-session-note.html"><svg class="i"><use href="#i-note"/></svg>الجلسات</a>
+      <a href="04-client-file.html" class="secondary"><svg class="i"><use href="#i-target"/></svg>الخطط والأهداف</a>
+      <a href="06-assessments.html"><svg class="i"><use href="#i-chart"/></svg>التقييمات</a>
+    </nav>
+    <div class="nav-label">النظام</div>
+    <nav class="nav">
+      <a href="#" class="secondary"><svg class="i"><use href="#i-megaphone"/></svg>الإشعارات والإعلانات</a>
+      <a href="#" class="secondary"><svg class="i"><use href="#i-settings"/></svg>الإعدادات</a>
+    </nav>
+    <div class="sidebar-foot">
+      <span class="avatar">هـ</span>
+      <div><b>د. هالة الشامي</b><small>أخصائية نفسية</small></div>
+      <button class="icon-btn" title="تسجيل الخروج"><svg class="i"><use href="#i-logout"/></svg></button>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="search input-icon">
+        <svg class="i"><use href="#i-search"/></svg>
+        <input class="input" type="search" placeholder="ابحث باسم المراجع أو رقم الملف…">
+      </div>
+      <div class="today"><svg class="i sm"><use href="#i-calendar"/></svg><span>اليوم</span> <b class="num">الأحد 11 أكتوبر 2026</b></div>
+      <button class="icon-btn" title="الإشعارات"><svg class="i"><use href="#i-bell"/></svg><span class="dot"></span></button>
+      <span class="avatar">هـ</span>
+    </header>
+
+    <main class="content">
+
+      <!-- ترحيب + ملخص اليوم -->
+      <section class="hello">
+        <svg class="blob" viewBox="0 0 420 300" aria-hidden="true">
+          <path d="M310 40c60 10 110 60 100 130s-80 110-150 100S120 210 140 140 250 30 310 40z" fill="#fff" opacity=".38"/>
+          <path d="M360 150c30 20 40 70 10 100s-90 20-110-10 0-80 30-95 40-15 70 5z" fill="#C8D5C0" opacity=".6"/>
+          <circle cx="196" cy="74" r="16" fill="#fff" opacity=".55"/>
+        </svg>
+        <div class="hello-top">
+          <div>
+            <span class="eyebrow"><svg class="i sm"><use href="#i-sun"/></svg> صباح الخير</span>
+            <h1>أهلًا د. هالة</h1>
+            <p>لديك <b>5 مواعيد</b> اليوم، أولها انتهى. <b>3 طلبات حجز</b> و<b>حساب جديد</b> بانتظار ردك.</p>
+          </div>
+          <div class="actions">
+            <a class="btn btn-ghost" href="03-clients.html"><svg class="i"><use href="#i-user-plus"/></svg>ملف جديد</a>
+            <a class="btn btn-primary" href="02-calendar.html"><svg class="i"><use href="#i-calendar-plus"/></svg>موعد جديد</a>
+          </div>
+        </div>
+        <div class="hello-stats">
+          <a href="02-calendar.html"><b class="num">5</b><span>مواعيد اليوم</span></a>
+          <a href="02-calendar.html" class="warn"><b class="num">3</b><span>طلبات بانتظار التأكيد</span></a>
+          <a href="05-session-note.html"><b class="num">1</b><span>جلسة تحتاج توثيقًا</span></a>
+          <a href="03-clients.html"><b class="num">42</b><span>مراجعًا نشطًا</span></a>
+        </div>
+      </section>
+
+      <div class="dash-grid">
+        <div class="stack">
+
+          <!-- جدول اليوم -->
+          <section class="card">
+            <div class="card-head">
+              <h2>جدول اليوم</h2>
+              <a class="link" href="02-calendar.html">التقويم الكامل <svg class="i sm"><use href="#i-chev-l"/></svg></a>
+            </div>
+            <div class="day">
+              <div class="slot done">
+                <time class="num">09:00<small>45 د</small></time>
+                <a class="slot-card" href="05-session-note.html">
+                  <span class="avatar av-2">ل</span>
+                  <span class="who"><b>ليان أحمد</b><span>#1024 · جلسة متابعة فردية</span></span>
+                  <span class="chip st-done">مكتمل</span>
+                  <span class="btn btn-soft btn-sm"><svg class="i"><use href="#i-edit"/></svg>وثّق الجلسة</span>
+                </a>
+              </div>
+              <div class="slot now">
+                <time class="num">10:00<small>50 د</small></time>
+                <a class="slot-card" href="04-client-file.html">
+                  <span class="avatar">ع</span>
+                  <span class="who"><b>عمر خالد <span class="now-pill">الآن</span></b><span>#1031 · جلسة فردية</span></span>
+                  <span class="chip st-confirmed">مؤكد</span>
+                  <span class="btn btn-ghost btn-sm">فتح الملف</span>
+                </a>
+              </div>
+              <div class="slot">
+                <time class="num">11:30<small>50 د</small></time>
+                <a class="slot-card" href="06-assessments.html">
+                  <span class="avatar av-3">ن</span>
+                  <span class="who"><b>نورة سالم</b><span>#0987 · جلسة فردية · تقييم دوري مستحق</span></span>
+                  <span class="chip st-confirmed">مؤكد</span>
+                </a>
+              </div>
+              <div class="slot break">
+                <time class="num">13:00<small>30 د</small></time>
+                <div class="slot-card"><svg class="i"><use href="#i-coffee"/></svg> استراحة</div>
+              </div>
+              <div class="slot">
+                <time class="num">14:00<small>60 د</small></time>
+                <a class="slot-card" href="04-client-file.html">
+                  <span class="avatar av-4">ي</span>
+                  <span class="who"><b>يوسف العتيبي</b><span>#1045 · جلسة نمائية مع ولي الأمر</span></span>
+                  <span class="chip st-confirmed">مؤكد</span>
+                </a>
+              </div>
+              <div class="slot">
+                <time class="num">15:30<small>60 د</small></time>
+                <a class="slot-card" href="04-client-file.html">
+                  <span class="avatar av-5">ف</span>
+                  <span class="who"><b>فيصل الحربي</b><span>#1052 · جلسة تقييم أولي</span></span>
+                  <span class="chip st-confirmed">مؤكد</span>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- الأيام القادمة -->
+          <section class="card">
+            <div class="card-head">
+              <h2>خلال الأيام القادمة</h2>
+              <a class="link" href="02-calendar.html">عرض الأسبوع <svg class="i sm"><use href="#i-chev-l"/></svg></a>
+            </div>
+            <div class="upcoming">
+              <a href="02-calendar.html">
+                <span class="d">الإثنين <span class="num">12</span><small>أكتوبر</small></span>
+                <span class="bars"><i></i><i></i><i></i><i class="free"></i><i class="free"></i><i class="free"></i></span>
+                <span class="meta num">3 مواعيد · 3 أوقات متاحة</span>
+              </a>
+              <a href="02-calendar.html">
+                <span class="d">الثلاثاء <span class="num">13</span><small>أكتوبر</small></span>
+                <span class="bars"><i class="p"></i><i></i><i class="free"></i><i class="free"></i><i class="free"></i><i class="free"></i></span>
+                <span class="meta num">موعد + طلب جديد</span>
+              </a>
+              <a href="02-calendar.html">
+                <span class="d">الأربعاء <span class="num">14</span><small>أكتوبر</small></span>
+                <span class="bars"><i></i><i class="p"></i><i class="free"></i><i class="free"></i><i class="free"></i><i class="free"></i></span>
+                <span class="meta num">موعد + طلب تغيير</span>
+              </a>
+            </div>
+          </section>
+        </div>
+
+        <div class="stack">
+          <!-- طلبات الحجز -->
+          <section class="card">
+            <div class="card-head">
+              <h2>طلبات تنتظر ردك <span class="count num">4</span></h2>
+              <a class="link" href="02-calendar.html">الكل</a>
+            </div>
+            <div class="rows">
+              <div class="row">
+                <span class="avatar sm av-3">س</span>
+                <div class="grow"><b>سلمان ناصر</b><span class="num">طلب جديد · الثلاثاء 13 أكتوبر · 11:00</span></div>
+                <div class="acts">
+                  <button class="icon-btn sm" title="رفض"><svg class="i"><use href="#i-x"/></svg></button>
+                  <a class="btn btn-primary btn-sm" href="02-calendar.html">مراجعة</a>
+                </div>
+              </div>
+              <div class="row">
+                <span class="avatar sm av-4">م</span>
+                <div class="grow"><b>مها عبدالله</b><span class="num">طلب تغيير ← الأربعاء 14 أكتوبر · 16:00</span></div>
+                <div class="acts"><a class="btn btn-ghost btn-sm" href="02-calendar.html">مراجعة</a></div>
+              </div>
+              <div class="row">
+                <span class="avatar sm">ل</span>
+                <div class="grow"><b>لمى سعد</b><span class="num">طلب جديد · الخميس 15 أكتوبر · 09:30</span></div>
+                <div class="acts"><a class="btn btn-ghost btn-sm" href="02-calendar.html">مراجعة</a></div>
+              </div>
+              <div class="row">
+                <span class="ico teal"><svg class="i"><use href="#i-user-plus"/></svg></span>
+                <div class="grow"><b>هند يوسف</b><span>طلب إنشاء حساب · يحتاج ربطًا بملف</span></div>
+                <div class="acts"><a class="btn btn-soft btn-sm" href="03-clients.html">تفعيل</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- المهام -->
+          <section class="card">
+            <div class="card-head"><h2>المهام والتذكيرات</h2></div>
+            <div class="rows">
+              <div class="row">
+                <span class="check"><svg class="i"><use href="#i-check"/></svg></span>
+                <div class="grow"><b>توثيق جلسة ليان أحمد</b><span class="num">اليوم 09:00 · لم تُعتمد بعد</span></div>
+                <a class="btn btn-soft btn-sm" href="05-session-note.html">ابدئي</a>
+              </div>
+              <div class="row">
+                <span class="check"><svg class="i"><use href="#i-check"/></svg></span>
+                <div class="grow"><b>مراجعة أهداف يوسف العتيبي</b><span class="num">موعد المراجعة: 15 أكتوبر</span></div>
+              </div>
+              <div class="row">
+                <span class="check on"><svg class="i"><use href="#i-check"/></svg></span>
+                <div class="grow"><b style="text-decoration:line-through;color:var(--muted)">إرسال إعلان إجازة 22 أكتوبر</b><span>تم أمس</span></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ملفات تحتاج متابعة -->
+          <section class="card">
+            <div class="card-head"><h2>ملفات تحتاج متابعة</h2></div>
+            <div class="rows">
+              <a class="row" href="06-assessments.html">
+                <span class="ico amber"><svg class="i"><use href="#i-chart"/></svg></span>
+                <div class="grow"><b>نورة سالم</b><span class="num">تقييم دوري مستحق · 18 أكتوبر</span></div>
+                <svg class="i sm muted"><use href="#i-chev-l"/></svg>
+              </a>
+              <a class="row" href="04-client-file.html">
+                <span class="ico"><svg class="i"><use href="#i-target"/></svg></span>
+                <div class="grow"><b>يوسف العتيبي</b><span>هدف «انتظار الدور» يحتاج مراجعة</span></div>
+                <svg class="i sm muted"><use href="#i-chev-l"/></svg>
+              </a>
+              <a class="row" href="03-clients.html">
+                <span class="ico clay"><svg class="i"><use href="#i-clock"/></svg></span>
+                <div class="grow"><b>مها عبدالله</b><span class="num">متوقف مؤقتًا منذ 62 يومًا</span></div>
+                <svg class="i sm muted"><use href="#i-chev-l"/></svg>
+              </a>
+            </div>
+          </section>
+
+          <!-- إعلان -->
+          <section class="card announce">
+            <div class="card-head">
+              <h2>الإعلانات</h2>
+              <a class="link" href="#"><svg class="i sm"><use href="#i-plus"/></svg>إعلان جديد</a>
+            </div>
+            <div class="rows">
+              <div class="row">
+                <span class="ico"><svg class="i"><use href="#i-megaphone"/></svg></span>
+                <div class="grow"><b>إغلاق العيادة يوم الخميس 22 أكتوبر</b><span class="num">منشور لجميع المراجعين · قرأه 31</span></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+</body>
+</html>

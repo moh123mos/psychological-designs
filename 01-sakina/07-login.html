@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تسجيل الدخول · العيادة</title>
+<link rel="stylesheet" href="style.css">
+<script src="../shared/icons.js"></script>
+<script src="../shared/present.js"></script>
+</head>
+<body class="client">
+<div class="device">
+  <div class="screen login">
+    <div class="login-hero">
+      <svg class="blob" viewBox="0 0 360 260" aria-hidden="true">
+        <path d="M180 20c70 0 150 30 150 100s-70 120-150 120S30 200 30 130 110 20 180 20z" fill="#DFE7D9" opacity=".7"/>
+        <path d="M260 60c40 10 70 50 50 90s-70 40-90 10 0-110 40-100z" fill="#EFE8DC"/>
+      </svg>
+      <span class="brand-mark"><svg class="i"><use href="#i-leaf"/></svg></span>
+      <h1>أهلًا بك</h1>
+      <p>عيادة د. هالة الشامي للإرشاد والعلاج النفسي</p>
+    </div>
+
+    <form onsubmit="location.href='08-home.html';return false">
+      <div class="field">
+        <label for="id">رقم الجوال أو البريد الإلكتروني</label>
+        <div class="input-icon">
+          <svg class="i"><use href="#i-phone"/></svg>
+          <input id="id" class="input num" inputmode="email" value="0512345678">
+        </div>
+      </div>
+      <div class="field">
+        <label for="pw">كلمة المرور</label>
+        <div class="pw input-icon">
+          <svg class="i"><use href="#i-lock"/></svg>
+          <input id="pw" class="input" type="password" value="password123">
+          <button type="button" class="icon-btn" title="إظهار كلمة المرور"><svg class="i"><use href="#i-eye"/></svg></button>
+        </div>
+      </div>
+      <div class="row-between">
+        <label class="remember"><span class="check on"><svg class="i"><use href="#i-check"/></svg></span>تذكرني على هذا الجهاز</label>
+        <a href="#">نسيت كلمة المرور؟</a>
+      </div>
+      <button class="btn btn-primary btn-lg btn-block" type="submit">تسجيل الدخول</button>
+      <div class="or">مراجع جديد؟</div>
+      <a class="btn btn-ghost btn-lg btn-block" href="#"><svg class="i"><use href="#i-user-plus"/></svg>طلب إنشاء حساب</a>
+    </form>
+
+    <div class="safe">
+      <svg class="i"><use href="#i-shield"/></svg>
+      <span>يُفعَّل الحساب بعد مراجعة العيادة وربطه بملفك. بياناتك محمية ولا يطّلع عليها غير المخولين.</span>
+    </div>
+    <p class="limits"><svg class="i"><use href="#i-info"/></svg>هذا التطبيق لتنظيم المواعيد والمتابعة، وليس خدمة طوارئ. في الحالات العاجلة تواصل مع رقم الطوارئ المحلي.</p>
+  </div>
+</div>
+</body>
+</html>
